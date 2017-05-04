@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dot_bg"   
+    tools:context=".Main" >
+
+    <Button
+        android:id="@+id/touchpad"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/touchpad" />
+
+    <Button
+        android:id="@+id/souris"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mouse" />
+
+    <Button
+        android:id="@+id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/touchpad"
+        android:layout_alignRight="@+id/souris"
+        android:layout_below="@+id/souris"
+        android:layout_marginTop="92dp"
+        android:text="powerpoint" />
+
+</RelativeLayout>
